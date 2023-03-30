@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.my_hnav{
+    max-height: 60px;
+}
+
+.my_saidbar{
+    width: 50px;
+    min-height: 100vw;
+    z-index: 999;
+    position: relative;
+    background-color: #051E34
+    
+}
+
+.height200{
+    height: 200px;
+    
+}
+
+.my_container_main{
+    width: calc(100vw);
+    background-color: #1B72E8;
+}
