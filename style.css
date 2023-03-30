@@ -1,8 +1,8 @@
-*{
+/* *{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-}
+} */
 
 .my_hnav{
     max-height: 60px;
@@ -10,18 +10,20 @@
 
 .my_sidebar{
     width: 50px;
-    min-height: 100vw;
+    min-height: 100%;
     z-index: 999;
     position: relative;
+    background-image: url(./img/sidebar-bg.png);
     background-color: #051E34
+    
     
 }
 
 .height200{
-    height: 200px;
-    
+    height: 200px;    
 }
 
-.my_container_main{
-    width: 100%
+
+.wimg{
+    width: 10px;
 }
