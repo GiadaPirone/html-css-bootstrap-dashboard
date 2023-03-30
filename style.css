@@ -8,7 +8,7 @@
     max-height: 60px;
 }
 
-.my_saidbar{
+.my_sidebar{
     width: 50px;
     min-height: 100vw;
     z-index: 999;
@@ -23,6 +23,5 @@
 }
 
 .my_container_main{
-    width: calc(100vw);
-    background-color: #1B72E8;
+    width: 100%
 }
