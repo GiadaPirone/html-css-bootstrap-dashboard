@@ -17,8 +17,9 @@
             <div class="container-fluid  ">
                 
                 <!-- logo. -->
-                <div class="">
-                    <img class="img-fluid w_img" src="./img/mobile-logo.png" alt="">
+                <div>
+                    <img class="img-fluid w_img d-lg-none" src="./img/mobile-logo.png" alt="">
+                    <img class="d-none d-lg-block" src="./img/logo.svg" alt="">
                 </div>
                 <!-- barra di ricerca. -->
                 <div class="col-8">
@@ -40,38 +41,56 @@
 
         <!-- section sidebar. -->
         <section>
-            <div class=" my_sidebar">
-                
-                <div class="text-white text-center"><i class="fa-solid fa-house"></i></div>
-                <div class="text-white text-center"><i class="fa-solid fa-chart-column"></i></div>
-                <div class="text-white text-center"><i class="fa-solid fa-signal"></i></div>
+            <div class=" my_sidebar d-flex flex-column justify-content-between p-3">
+                <div>
+                    <div class="d-flex align-items-baseline text-white text-center">
+                        <i class="fa-solid fa-house"></i>
+                        <p class="d-none d-lg-block px-2">Home</p>
+                    </div>
 
-                <div class="text-white text-center"><i class="fa-brands fa-slack"></i></i></div>
+                    <div class="d-flex align-items-baseline text-white text-center">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <p class="d-none d-lg-block px-2">Stats</p>
+                    </div>
+
+                    <div class="d-flex align-items-baseline text-white text-center">
+                        <i class="fa-solid fa-signal"></i>
+                        <p class="d-none d-lg-block px-2">Signals</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="d-flex align-items-baseline text-white text-center">
+                        <i class="fa-brands fa-slack"></i>
+                        <p class="d-none d-lg-block px-2">Admin</p>
+                    </div>
+                </div>
+                
                               
             </div>
         </section>
 
         <!-- main. -->
-        <main class="container-fluid p-0">
+        <main>
 
              <!--prima section, barra blu. -->
-             <section>
+            <section>
                 <div class="container-fluid bg-primary ">
                     <div class="row  ">
                         
-                        <div class="col-12 border d-flex align-items-center border-secondary">
+                        <div class="col-12 col-md-4 border d-flex align-items-center border-secondary">
                             <p class="text-white">Nuovo studente</p>
                             <button type="button" class="btn btn-outline-light">+</button>
                         </div>
 
-                        <div class="col-12 border border-secondary">                          
+                        <div class="col-12 col-md-4 border border-secondary">                          
                             <div class="row">                                
                                 <!-- <button type="button" class="col-1 btn btn-secondary btn-sm rounded-pill">piano bleze</button> -->
                                 <h3 class="col-3 text-white">Boolean</h3>                               
                             </div>                          
                         </div>
                         
-                        <div class="col-12 border border-secondary">
+                        <div class="col-12 col-md-4 border border-secondary">
                             <p class="text-white">Studenti online negli ultimo 30 minuti</p>
                             <h3 class="text-white">125</h3>
                         </div>
@@ -79,8 +98,11 @@
                     </div>
                 </div>
             </section>
-            <!-- row e col che racchiudono la prima parte da desck. -->
-            <div class="row">
+
+            <!------- row e col che racchiudono la prima parte da desck. ----->
+            <div class="container-fluid">
+
+                <div class="row">
                 <div class="col-12 col-lg-8">
                                    
                     <!-- section due, tabella. -->             
@@ -95,10 +117,10 @@
                                                 <!-- header tabella. -->
                                                 <thead>
                                                     <tr>    
-                                                        <th scope="col col-md-1">Nome</th>
+                                                        <th scope="col">Nome</th>
                                                         <th class="d-none d-md-block" scope="col">Data Inizio</th>
                                                         <th class="d-none" scope="col">ROI</th>
-                                                        <th scope="col">Stato</th>
+                                                        <th scope="col">Stato</th>                                         
                                                         <th scope="col">Azioni</th>
                                                     </tr>
                                                 </thead>
@@ -113,7 +135,7 @@
                                                             <p>15 Feb 2021</p>
                                                         </td>
 
-                                                        <td >
+                                                        <td class="d-none">
                                                             <p>20%</p>
                                                         </td>
                                         
@@ -136,7 +158,7 @@
                                                             <p>15 Feb 2021</p>
                                                         </td>
 
-                                                        <td >
+                                                        <td class="d-none">
                                                             <p>20%</p>
                                                         </td>
                                         
@@ -159,7 +181,7 @@
                                                             <p>15 Feb 2021</p>
                                                         </td>
 
-                                                        <td >
+                                                        <td class="d-none" >
                                                             <p>20%</p>
                                                         </td>
                                         
@@ -182,7 +204,7 @@
                                                             <p>15 Feb 2021</p>
                                                         </td>
 
-                                                        <td >
+                                                        <td class="d-none">
                                                             <p>20%</p>
                                                         </td>
                                         
@@ -205,7 +227,7 @@
                                                             <p>15 Feb 2021</p>
                                                         </td>
 
-                                                        <td>
+                                                        <td class="d-none">
                                                             <p>20%</p>
                                                         </td>
                                         
@@ -276,7 +298,8 @@
                     </section>
                 </div>
 
-                <!-- parte laterale da desck todo ecc -->
+            
+                <!------ parte laterale da desck todo ecc ------->
                 <div class="col-12 col-lg-4">
                     
                     <!-- section TODO. -->
