@@ -17,11 +17,11 @@
             <div class="container-fluid  ">
                 
                 <!-- logo. -->
-                <div class="col-1">
-                    <img class="img-fluid" src="./img/mobile-logo.png" alt="">
+                <div class="">
+                    <img class="img-fluid w_img" src="./img/mobile-logo.png" alt="">
                 </div>
                 <!-- barra di ricerca. -->
-                <div class="col-10">
+                <div class="col-8">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     </form>
@@ -42,9 +42,11 @@
         <section>
             <div class=" my_sidebar">
                 
-                <div class="text-white"><i class="fa-solid fa-house"></i></div>
-                <div class="text-white"><i class="fa-solid fa-chart-column"></i></div>
-                <div class="text-white"><i class="fa-solid fa-signal"></i></div>
+                <div class="text-white text-center"><i class="fa-solid fa-house"></i></div>
+                <div class="text-white text-center"><i class="fa-solid fa-chart-column"></i></div>
+                <div class="text-white text-center"><i class="fa-solid fa-signal"></i></div>
+
+                <div class="text-white text-center"><i class="fa-brands fa-slack"></i></i></div>
                               
             </div>
         </section>
@@ -55,10 +57,25 @@
              <!--prima section, barra blu. -->
              <section>
                 <div class="container-fluid bg-primary ">
-                    <div class="row height200 ">
-                        <div class="col-12 border border-secondary">provaaa</div>
-                        <div class="col-12 border border-secondary"></div>
-                        <div class="col-12 border border-secondary"></div>
+                    <div class="row  ">
+                        
+                        <div class="col-12 border d-flex align-items-center border-secondary">
+                            <p class="text-white">Nuovo studente</p>
+                            <button type="button" class="btn btn-outline-light">+</button>
+                        </div>
+
+                        <div class="col-12 border border-secondary">                          
+                            <div class="row">                                
+                                <!-- <button type="button" class="col-1 btn btn-secondary btn-sm rounded-pill">piano bleze</button> -->
+                                <h3 class="col-3 text-white">Boolean</h3>                               
+                            </div>                          
+                        </div>
+                        
+                        <div class="col-12 border border-secondary">
+                            <p class="text-white">Studenti online negli ultimo 30 minuti</p>
+                            <h3 class="text-white">125</h3>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -66,8 +83,7 @@
             <div class="row">
                 <div class="col-12 col-lg-8">
                                    
-                    <!-- section due, tabella. -->
-              
+                    <!-- section due, tabella. -->             
                     <section>
                         <div class="container-fluid">
                             <div class="row">
@@ -79,7 +95,9 @@
                                                 <!-- header tabella. -->
                                                 <thead>
                                                     <tr>    
-                                                        <th scope="col">Nome</th>
+                                                        <th scope="col col-md-1">Nome</th>
+                                                        <th class="d-none d-md-block" scope="col">Data Inizio</th>
+                                                        <th class="d-none d-md-block" scope="col">ROI</th>
                                                         <th scope="col">Stato</th>
                                                         <th scope="col">Azioni</th>
                                                     </tr>
@@ -90,14 +108,25 @@
                                                         <td >                                               
                                                             <img class="img-fluid wimg" src="./img/class-avatar.jpg" alt=""> Classe 75
                                                         </td>
+
+                                                        <td class="d-none d-md-block">
+                                                            <p>15 Feb 2021</p>
+                                                        </td>
+
+                                                        <td class="d-none d-md-block">
+                                                            20%
+                                                        </td>
                                         
                                                         <td>
                                                             <button class="btn btn-primary btn-sm " type="submit">Done</button>
                                                         </td>
                                         
-                                                        <td class="d-flex">      
-                                                            <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>     
-                                                            <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>             
+                                                        <td> 
+                                                            <div class="d-flex">
+                                                                <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>     
+                                                                <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>             
+                                                            </div>     
+                                                            
                                                         </td>                                    
                                                     </tr>            
                                                 </tbody>
@@ -107,6 +136,14 @@
                                                     <tr>           
                                                         <td >                                               
                                                             <img class="img-fluid wimg" src="./img/class-avatar.jpg" alt=""> Classe 75
+                                                        </td>
+
+                                                        <td class="d-none d-md-block">
+                                                            <p>15 Feb 2021</p>
+                                                        </td>
+
+                                                        <td class="d-none d-md-block">
+                                                            <p>20%</p>
                                                         </td>
                                         
                                                         <td>
@@ -125,6 +162,14 @@
                                                         <td >                                               
                                                             <img class="img-fluid wimg" src="./img/class-avatar.jpg" alt=""> Classe 75
                                                         </td>
+
+                                                        <td class="d-none d-md-block">
+                                                            <p>15 Feb 2021</p>
+                                                        </td>
+
+                                                        <td class="d-none d-md-block">
+                                                            <p>20%</p>
+                                                        </td>
                                         
                                                         <td>
                                                             <button class="btn btn-primary btn-sm " type="submit">Done</button>
@@ -139,48 +184,52 @@
                                                 <!-- quarta linea tb. -->
                                                 <tbody>
                                                     <tr>           
-                                                        <td class="row">
-                                                            <div class="col-2">
-                                                                <img class="img-fluid" src="./img/class-avatar.jpg" alt="">
-                                                            </div>
-                                                            Classe 78
+                                                        <td >                                               
+                                                            <img class="img-fluid wimg" src="./img/class-avatar.jpg" alt=""> Classe 75
+                                                        </td>
+
+                                                        <td class="d-none d-md-block">
+                                                            <p>15 Feb 2021</p>
+                                                        </td>
+
+                                                        <td class="d-none d-md-block">
+                                                            <p>20%</p>
                                                         </td>
                                         
                                                         <td>
                                                             <button class="btn btn-primary btn-sm " type="submit">Done</button>
                                                         </td>
                                         
-                                                        <td class="row">
-                                                            <div class="col-2 d-flex">
-                                                                <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>     
-                                                                <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>
-                                                            </div>               
-                                                        </td>
-                                                    
+                                                        <td class="d-flex">      
+                                                            <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>     
+                                                            <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>             
+                                                        </td>                                    
                                                     </tr>            
                                                 </tbody>
                                         
                                                 <!-- quinta linea tb. -->
                                                 <tbody>
                                                     <tr>           
-                                                        <td class="row">
-                                                            <div class="col-2">
-                                                                <img class="img-fluid" src="./img/class-avatar.jpg" alt="">
-                                                            </div>
-                                                            Classe 79
+                                                        <td >                                               
+                                                            <img class="img-fluid wimg" src="./img/class-avatar.jpg" alt=""> Classe 75
                                                         </td>
-                                                
+
+                                                        <td class="d-none d-md-block">
+                                                            <p>15 Feb 2021</p>
+                                                        </td>
+
+                                                        <td class="d-none d-md-block">
+                                                            <p>20%</p>
+                                                        </td>
+                                        
                                                         <td>
                                                             <button class="btn btn-primary btn-sm " type="submit">Done</button>
                                                         </td>
-                                                
-                                                        <td class="row">
-                                                            <div class="col-2 d-flex">
-                                                                <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>     
-                                                                <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>
-                                                            </div>               
-                                                        </td>
-                                                            
+                                        
+                                                        <td class="d-flex">      
+                                                            <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>     
+                                                            <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>             
+                                                        </td>                                    
                                                     </tr>            
                                                 </tbody>
                                                
@@ -191,8 +240,7 @@
                             </div>
                         </div>
                     </section>
-
-            
+          
                     <!-- section due, domande. -->
                     <section>
                         <div class="container-fluid">
@@ -243,65 +291,76 @@
 
                 <!-- parte laterale da desck todo ecc -->
                 <div class="col-12 col-lg-4">
-    
+                    
+                    <!-- section TODO. -->
                     <section>
-                        <div class="card">
-                            <h5 class="card-header">Todo</h5>
-                            <div class="card-body">
+                        <div class="container-fluid">
 
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                    Default checkbox
-                                    </label>
+                            <div class="card">
+                                <h5 class="card-header">Todo</h5>
+                                <div class="card-body">
+    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Default checkbox
+                                        </label>
+                                    </div>
+    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Default checkbox
+                                        </label>
+                                    </div>
+    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Default checkbox
+                                        </label>
+                                    </div>
+                                     
                                 </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                    Default checkbox
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                    Default checkbox
-                                    </label>
-                                </div>
-                                 
                             </div>
-                        </div>
+                            
+                        </div>                        
                     </section>
 
+                    <!-- section grafico. -->
                     <section>
-                        <div class="card">
-                            <h5 class="card-header">Todo</h5>
-                            <div class="card-body">
-                                <img class="img-fluid" src="./img/stats.jpeg" alt="">
-                                
-                                <div class="border">
-                                    <h5>Utenti attivi</h5>
-                                    <p>lista degli utenti in piattaforma nell'ultimo mese</p>
-                                </div>
+                        <div class="container-fluid">
 
-                                <div class="border">
-                                    <p>Gennaio 1200</p>
-                                </div>
-
-                                <div class="border">
-                                    <p>febbraio: 800</p>
-                                </div>
-
-                                <div class="border">
-                                    <p>Marzo: 1500</p>
-                                </div>
-
-                                <div class="border">
-                                    <a href="#">Visualizza report approfondito</a>
+                            <div class="card">
+                                <h5 class="card-header">Todo</h5>
+                                <div class="card-body">
+                                    <img class="img-fluid" src="./img/stats.jpeg" alt="">
+                                    
+                                    <div class="border">
+                                        <h5>Utenti attivi</h5>
+                                        <p>lista degli utenti in piattaforma nell'ultimo mese</p>
+                                    </div>
+    
+                                    <div class="border">
+                                        <p>Gennaio 1200</p>
+                                    </div>
+    
+                                    <div class="border">
+                                        <p>febbraio: 800</p>
+                                    </div>
+    
+                                    <div class="border">
+                                        <p>Marzo: 1500</p>
+                                    </div>
+    
+                                    <div class="border">
+                                        <a href="#">Visualizza report approfondito</a>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
+                        
                     </section>
     
                 </div>

@@ -8,6 +8,10 @@
     max-height: 60px;
 }
 
+.w_img{
+    width: 70px;
+}
+
 .my_sidebar{
     width: 50px;
     min-height: 100%;
@@ -15,8 +19,6 @@
     position: relative;
     background-image: url(./img/sidebar-bg.png);
     background-color: #051E34
-    
-    
 }
 
 .height200{
@@ -26,4 +28,11 @@
 
 .wimg{
     width: 10px;
+}
+
+@media screen and (min-width:992px) {
+    .my_sidebar{
+        width: 100px;
+    }
+    
 }
